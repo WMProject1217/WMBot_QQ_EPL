@@ -1,7 +1,8 @@
 @echo off
+title WMBot Holder
 cd /d %~dp0
 :a
 WMBot.exe
-echo Restarting WMBot...
-timeout /t 6 >nul
+echo [%date% %time%]Restarting WMBot...
+timeout /t 1 >nul
 goto a
